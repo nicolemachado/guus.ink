@@ -1,0 +1,79 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;  
+}
+
+.center{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+html, body{
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.bg{
+  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(./guss2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed
+}
+
+.header{
+  height: 200px;
+  padding: 20px 0;
+}
+
+.menu{
+  padding-top: 30px;
+  text-align: right;
+  width: 60%;
+  
+}
+
+
+.menu a{
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  font-size: bold;
+  margin-right: 15px;
+}
+
+section.sobre{
+  height: calc(100% - 200px);
+  position: relative;
+}
+
+.social-media{
+  position: absolute;
+  color: aliceblue;
+  right: 500px;
+  top: 40px;
+}
+
+.social-media img{
+  display: relative;
+  opacity: 1; /**/
+  width: 40px;
+  margin: -25;
+  color: aliceblue;
+  padding-top: 5px;
+  margin-right: -50px;
+}
+
+.logo{
+  position: center;
+  margin-top: 180px;
+  display: center;
+  margin-left: -380px;
+  align-items: center;
+  justify-content: center;
+}
