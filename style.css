@@ -20,11 +20,7 @@ html, body{
 }
 
 .bg{
-  background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0)), url(./guss2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed
+  background-image: linear-gradient(black, rgb(26, 2, 2));
 }
 
 .header{
@@ -32,19 +28,22 @@ html, body{
   padding: 20px 0;
 }
 
-.menu{
+.center .menu{
+  display: flex;
   padding-top: 30px;
-  text-align: right;
   width: 60%;
-  
+  margin-left: 280px;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
 }
-
 
 .menu a{
   color: hsl(0, 0%, 100%);
   text-decoration: none;
   font-size: bold;
   margin-right: 15px;
+  user-select: none;
 }
 
 section.sobre{
@@ -66,14 +65,27 @@ section.sobre{
   margin: -25;
   color: aliceblue;
   padding-top: 5px;
-  margin-right: -50px;
+  margin-right: 25px;
 }
 
 .logo{
-  position: center;
-  margin-top: 160px;
-  display: center;
-  margin-left: -380px;
-  align-items: center;
-  justify-content: center;
+
+  display: flex;
+}
+.logo-1{
+  position: absolute;
+  margin-left: 480;
+  margin-top: 109px;
+  z-index: 2;
+}
+
+.logo-2{
+  position: absolute;
+  margin-top: 70px;
+  z-index: 1;
+  margin-left: 460;
+}
+
+.logo-2 img{
+  width: 550px;
 }

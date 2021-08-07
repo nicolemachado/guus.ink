@@ -9,6 +9,7 @@ html, body{
   height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
+  background-image: linear-gradient(black, rgb(26, 2, 2));
 }
 
 .center3{ /*COLOCAR NOS OUTROS TBM*/
@@ -38,18 +39,63 @@ html, body{
   text-decoration: none;
   font-size: bold;
   margin-right: 15px;
+  user-select: none;
 }
 
-.bg{
-  background-image: url("./assets/bg2unsplash.jpg");
-  background-size: 100% 130%;
-  background-position: center;
-  background-attachment: fixed
+
+.social-media{
+  position: absolute;
+  color: aliceblue;
+  right: 500px;
+  top: 40px;
 }
 
-.image{
+.social-media img{
+  display: relative;
+  opacity: 1; /**/
+  width: 40px;
+  margin: -25;
+  color: aliceblue;
+  padding-top: 5px;
+  margin-right: 25px;
+}
+
+.horarios{
   display: flex;
+  user-select: none;
+}
+
+.horarios .title{
+  display: flex;
+  position: absolute;
+  margin-top: 140px;
+  margin-left: 630px;
+  color: aliceblue;
+}
+
+.horarios .p{
+  position: absolute;
+  margin-top: 180px;
   align-items: center;
-  justify-content: center;
-  margin-top: 6%;
+  color: aliceblue;
+}
+
+#p1{
+  margin-top: 40px;
+  font-size: 30px;
+  margin-left: 570px;
+  font-weight: 700;
+}
+
+#p2{
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 630px;
+  font-weight: 700;
+}
+
+h2{
+  border: 10px double black;
+  color: aliceblue;
+  margin-top: 500px;
 }
